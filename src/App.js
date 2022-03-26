@@ -4,8 +4,6 @@ import About from './components/About';
 import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
 
-
-
 function App() {
   const [categories] = useState([
     {
@@ -18,6 +16,7 @@ function App() {
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
+
   const [contactSelected, setContactSelected] = useState(false);
 
   return (
@@ -36,8 +35,8 @@ function App() {
             <About></About>
           </>
         ) : (
-            <ContactForm></ContactForm>
-          )}
+          <ContactForm></ContactForm>
+        )}
       </main>
     </div>
   );
